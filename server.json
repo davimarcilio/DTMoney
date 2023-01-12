@@ -15,6 +15,14 @@
       "category": "Alimentação",
       "price": 50,
       "createdAt": "2023-01-12T12:32:10.500Z"
+    },
+    {
+      "id": 3,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "educação",
+      "price": 1980,
+      "createdAt": "2023-01-12T12:32:10.500Z"
     }
   ]
 }
