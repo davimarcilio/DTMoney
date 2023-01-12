@@ -23,6 +23,14 @@
       "category": "educação",
       "price": 1980,
       "createdAt": "2023-01-12T12:32:10.500Z"
+    },
+    {
+      "category": "Alimentação",
+      "description": "Yogurte de banana",
+      "price": 4,
+      "type": "outcome",
+      "createdAt": "2023-01-12T21:19:15.563Z",
+      "id": 4
     }
   ]
 }
