@@ -7,8 +7,30 @@ import {
   TransactionType,
   TransactionTypeButton,
 } from "./styles";
+import * as z from "zod";
+import { useForm } from "react-hook-form/dist/useForm";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const newTransactionFormSchema = z.object({
+  description: z.string(),
+  price: z.number(),
+  caregory: z.string(),
+  type: z.enum(["income", "outcome"]),
+});
+
+type NewTransactionFormInputs = z.infer<typeof newTransactionFormSchema>;
 
 export function NewTransactionModal() {
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<NewTransactionFormInputs>({
+    resolver: zodResolver(newTransactionFormSchema),
+  });
+
+  function handleCreateNewTransaction(data: NewTransactionFormInputs) {}
+
   return (
     <Dialog.Portal>
       <Overlay>
@@ -18,10 +40,25 @@ export function NewTransactionModal() {
             <X size={24} />
           </CloseButton>
 
-          <form>
-            <input required type="text" placeholder="Descrição" />
-            <input required type="number" placeholder="Preço" />
-            <input required type="text" placeholder="Categoria" />
+          <form onSubmit={handleSubmit(handleCreateNewTransaction)}>
+            <input
+              {...register("description")}
+              required
+              type="text"
+              placeholder="Descrição"
+            />
+            <input
+              {...register("price")}
+              required
+              type="number"
+              placeholder="Preço"
+            />
+            <input
+              {...register("caregory")}
+              required
+              type="text"
+              placeholder="Categoria"
+            />
             <TransactionType>
               <TransactionTypeButton value="income" variant="income">
                 <ArrowCircleUp size={24} />
@@ -32,7 +69,9 @@ export function NewTransactionModal() {
                 Saída
               </TransactionTypeButton>
             </TransactionType>
-            <button type="submit">Cadastrar</button>
+            <button type="submit" disabled={isSubmitting}>
+              Cadastrar
+            </button>
           </form>
         </Content>
       </Overlay>
