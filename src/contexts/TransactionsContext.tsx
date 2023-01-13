@@ -17,7 +17,7 @@ interface CreateTransactionInput {
 }
 interface TransactionContextType {
   transactions: Transaction[];
-  fetchTransactions: (query?: string) => Promise<void>;
+  fetchTransactions: (query?: string, page?: number) => Promise<void>;
   createTransaction: (data: CreateTransactionInput) => Promise<void>;
 }
 
@@ -29,17 +29,21 @@ interface TransactionsProviderProps {
 
 export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
-  const fetchTransactions = useCallback(async (query?: string) => {
-    const response = await api.get("transactions", {
-      params: {
-        _sort: "createdAt",
-        _order: "desc",
-        _limit: 10,
-        q: query,
-      },
-    });
-    setTransactions(response.data);
-  }, []);
+  const fetchTransactions = useCallback(
+    async (query?: string, page?: number) => {
+      const response = await api.get("transactions", {
+        params: {
+          _sort: "createdAt",
+          _order: "desc",
+          _limit: 10,
+          _page: page,
+          q: query,
+        },
+      });
+      setTransactions(response.data);
+    },
+    []
+  );
   const createTransaction = useCallback(
     async (data: CreateTransactionInput) => {
       const { category, description, price, type } = data;
@@ -54,6 +58,13 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     },
     []
   );
+
+  // function setTransactionsPagination() {
+  //   // const transactionsPagination = transactions.slice(10, -10);
+  //   // TOTAL PAGES =>  Math.ceil(35 / 10);
+  //   const transactionsPagination = transactions.slice(0, 10);
+  //   console.log(transactionsPagination);
+  // }
 
   useEffect(() => {
     fetchTransactions();
