@@ -1,0 +1,172 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2023-01-12T17:32:10.500Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2023-01-12T12:32:10.500Z"
+    },
+    {
+      "id": 3,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "educação",
+      "price": 1980,
+      "createdAt": "2023-01-12T12:32:10.500Z"
+    },
+    {
+      "category": "Alimentação",
+      "description": "Yogurte de banana",
+      "price": 4,
+      "type": "outcome",
+      "createdAt": "2023-01-12T21:19:15.563Z",
+      "id": 4
+    },
+    {
+      "category": "Alimentação",
+      "description": "Santo Alho",
+      "price": 49,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:04:41.115Z",
+      "id": 5
+    },
+    {
+      "category": "Educação",
+      "description": "RocketSeat Ignite",
+      "price": 2000,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:05:08.240Z",
+      "id": 6
+    },
+    {
+      "category": "Trabalho",
+      "description": "Salário",
+      "price": 71318,
+      "type": "income",
+      "createdAt": "2023-01-12T23:05:27.366Z",
+      "id": 7
+    },
+    {
+      "category": "Aparelhos",
+      "description": "Monitor",
+      "price": 8000,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:06:03.122Z",
+      "id": 8
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 212,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:20.088Z",
+      "id": 9
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 88900,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:06:30.424Z",
+      "id": 10
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 1000000,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:41.001Z",
+      "id": 11
+    },
+    {
+      "category": "teste",
+      "description": "teste",
+      "price": 1,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:47.587Z",
+      "id": 12
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 212,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:20.088Z",
+      "id": 13
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 88900,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:06:30.424Z",
+      "id": 14
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 1000000,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:41.001Z",
+      "id": 15
+    },
+    {
+      "category": "teste",
+      "description": "teste",
+      "price": 1,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:47.587Z",
+      "id": 16
+    },
+    {
+      "category": "teste",
+      "description": "teste",
+      "price": 1,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:47.587Z",
+      "id": 17
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 212,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:20.088Z",
+      "id": 18
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 88900,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:06:30.424Z",
+      "id": 19
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 1000000,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:41.001Z",
+      "id": 20
+    },
+    {
+      "category": "Alimentação",
+      "description": "teste",
+      "price": 2000,
+      "type": "outcome",
+      "createdAt": "2023-01-13T15:36:56.132Z",
+      "id": 21
+    }
+  ]
+}
