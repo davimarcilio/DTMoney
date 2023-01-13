@@ -17,6 +17,7 @@ interface CreateTransactionInput {
 }
 interface TransactionContextType {
   transactions: Transaction[];
+  transactionsCount: number;
   fetchTransactions: (query?: string, page?: number) => Promise<void>;
   createTransaction: (data: CreateTransactionInput) => Promise<void>;
 }
@@ -29,6 +30,7 @@ interface TransactionsProviderProps {
 
 export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
+  const [transactionsCount, setTransactionsCount] = useState(0);
   const fetchTransactions = useCallback(
     async (query?: string, page?: number) => {
       const response = await api.get("transactions", {
@@ -40,6 +42,8 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
           q: query,
         },
       });
+      setTransactionsCount(Number(response.headers["x-total-count"]));
+
       setTransactions(response.data);
     },
     []
@@ -61,7 +65,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
   // function setTransactionsPagination() {
   //   // const transactionsPagination = transactions.slice(10, -10);
-  //   // TOTAL PAGES =>  Math.ceil(35 / 10);
+  //   // TOTAL PAGES =>
   //   const transactionsPagination = transactions.slice(0, 10);
   //   console.log(transactionsPagination);
   // }
@@ -71,7 +75,12 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   }, [fetchTransactions]);
   return (
     <TransactionsContext.Provider
-      value={{ transactions, fetchTransactions, createTransaction }}
+      value={{
+        transactions,
+        transactionsCount,
+        fetchTransactions,
+        createTransaction,
+      }}
     >
       {children}
     </TransactionsContext.Provider>

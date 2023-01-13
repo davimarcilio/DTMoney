@@ -5,10 +5,18 @@ import { TransactionsContext } from "../../../../contexts/TransactionsContext";
 import { Paginate, PaginateContainer } from "./style";
 
 export function Pagination() {
-  const fetchTransactions = useContextSelector(
+  const { fetchTransactions, transactionsCount } = useContextSelector(
     TransactionsContext,
-    (context) => context.fetchTransactions
+    (context) => {
+      return {
+        fetchTransactions: context.fetchTransactions,
+        transactionsCount: context.transactionsCount,
+      };
+    }
   );
+
+  const numberOfPagesToPagination = Math.ceil(transactionsCount / 10);
+
   // console.log(currentPage);
   interface PaginationFormProps {
     event: FormEvent;
@@ -31,7 +39,7 @@ export function Pagination() {
         containerClassName={"PaginateRContainer"}
         previousLabel={<CaretLeft size={24} />}
         nextLabel={<CaretRight size={24} />}
-        pageCount={3}
+        pageCount={numberOfPagesToPagination}
       />
     </PaginateContainer>
   );

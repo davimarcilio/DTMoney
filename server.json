@@ -95,6 +95,78 @@
       "type": "income",
       "createdAt": "2023-01-12T23:06:47.587Z",
       "id": 12
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 212,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:20.088Z",
+      "id": 13
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 88900,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:06:30.424Z",
+      "id": 14
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 1000000,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:41.001Z",
+      "id": 15
+    },
+    {
+      "category": "teste",
+      "description": "teste",
+      "price": 1,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:47.587Z",
+      "id": 16
+    },
+    {
+      "category": "teste",
+      "description": "teste",
+      "price": 1,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:47.587Z",
+      "id": 17
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 212,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:20.088Z",
+      "id": 18
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 88900,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:06:30.424Z",
+      "id": 19
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 1000000,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:41.001Z",
+      "id": 20
+    },
+    {
+      "category": "Alimentação",
+      "description": "teste",
+      "price": 2000,
+      "type": "outcome",
+      "createdAt": "2023-01-13T15:36:56.132Z",
+      "id": 21
     }
   ]
 }
