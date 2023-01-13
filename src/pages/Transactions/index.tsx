@@ -10,7 +10,6 @@ import {
   TransactionsContainer,
   TransactionsTable,
 } from "./style";
-
 export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
     return context.transactions;
