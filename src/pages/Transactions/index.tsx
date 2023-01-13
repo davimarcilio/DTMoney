@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
 import { dateFormatter, priceFormatter } from "../../utils/formatter";
+import { Pagination } from "./components/Pagination";
 import { SearchForm } from "./components/SearchForm";
 import {
   PriceHighlight,
@@ -41,6 +42,7 @@ export function Transactions() {
             })}
           </tbody>
         </TransactionsTable>
+        <Pagination />
       </TransactionsContainer>
     </div>
   );

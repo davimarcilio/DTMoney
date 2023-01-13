@@ -31,6 +31,70 @@
       "type": "outcome",
       "createdAt": "2023-01-12T21:19:15.563Z",
       "id": 4
+    },
+    {
+      "category": "Alimentação",
+      "description": "Santo Alho",
+      "price": 49,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:04:41.115Z",
+      "id": 5
+    },
+    {
+      "category": "Educação",
+      "description": "RocketSeat Ignite",
+      "price": 2000,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:05:08.240Z",
+      "id": 6
+    },
+    {
+      "category": "Trabalho",
+      "description": "Salário",
+      "price": 71318,
+      "type": "income",
+      "createdAt": "2023-01-12T23:05:27.366Z",
+      "id": 7
+    },
+    {
+      "category": "Aparelhos",
+      "description": "Monitor",
+      "price": 8000,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:06:03.122Z",
+      "id": 8
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 212,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:20.088Z",
+      "id": 9
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 88900,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:06:30.424Z",
+      "id": 10
+    },
+    {
+      "category": "Teste",
+      "description": "Teste",
+      "price": 1000000,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:41.001Z",
+      "id": 11
+    },
+    {
+      "category": "teste",
+      "description": "teste",
+      "price": 1,
+      "type": "income",
+      "createdAt": "2023-01-12T23:06:47.587Z",
+      "id": 12
     }
   ]
 }
