@@ -17,7 +17,6 @@ export function Pagination() {
 
   const numberOfPagesToPagination = Math.ceil(transactionsCount / 10);
 
-  // console.log(currentPage);
   interface PaginationFormProps {
     event: FormEvent;
     index: null;

@@ -20,7 +20,6 @@ export const Paginate = styled(ReactPaginate).attrs({
     background: ${(props) => props.theme["gray-600"]};
     padding: 0.725rem 1rem;
     border-radius: 6px;
-    line-height: 0;
     color: ${(props) => props.theme["gray-400"]};
     cursor: pointer;
   }
@@ -29,7 +28,8 @@ export const Paginate = styled(ReactPaginate).attrs({
   li.break a {
     background: transparent;
     color: ${(props) => props.theme["green-500"]};
-    padding: 0;
+    padding-top: 0.875rem;
+    padding-bottom: 0;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
