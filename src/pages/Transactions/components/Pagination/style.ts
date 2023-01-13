@@ -1,6 +1,6 @@
 import ReactPaginate from "react-paginate";
 import styled from "styled-components";
-export const PaginateContainer = styled.div`
+export const PaginateContainer = styled.form`
   display: flex;
   justify-content: center;
   justify-items: center;

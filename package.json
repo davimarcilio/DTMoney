@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.41.5",
     "react-paginate": "^8.1.4",
+    "react-spinners": "^0.13.7",
     "scheduler": "^0.23.0",
     "styled-components": "^5.3.6",
     "use-context-selector": "^1.4.1",
