@@ -18,7 +18,7 @@
 <h2>Além do desafio</h2>
 <p>Foi adicionado paginação</p>
 
-![ceppromisseCoffeeDelivery](https://user-images.githubusercontent.com/104699555/211910754-57783e67-daae-4b51-8964-f1dacd40b097.gif)
+![DTMoneyPaginate](https://user-images.githubusercontent.com/104699555/212440868-95cd9a4a-d8f2-4f16-8efd-3212d3815abf.gif)
 
 <hr>
 <h2>Teste a aplicação <a href="https://davimarcilio.github.io/DTMoney/">aqui!</a></h2>
