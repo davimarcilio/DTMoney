@@ -39,6 +39,54 @@
       "type": "outcome",
       "createdAt": "2023-01-12T23:04:41.115Z",
       "id": 5
+    },
+    {
+      "category": "Venda",
+      "description": "Free Lancer T Web",
+      "price": 900,
+      "type": "income",
+      "createdAt": "2023-01-12T23:04:41.115Z",
+      "id": 6
+    },
+    {
+      "category": "Alimentação",
+      "description": "Pizza",
+      "price": 120,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:04:41.115Z",
+      "id": 7
+    },
+    {
+      "category": "Academia",
+      "description": "Parcela",
+      "price": 100,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:04:41.115Z",
+      "id": 8
+    },
+    {
+      "category": "Academia",
+      "description": "Whey Protein",
+      "price": 149,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:04:41.115Z",
+      "id": 9
+    },
+    {
+      "category": "Academia",
+      "description": "Creatina",
+      "price": 89,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:04:41.115Z",
+      "id": 10
+    },
+    {
+      "category": "Academia",
+      "description": "Trembolona",
+      "price": 210,
+      "type": "outcome",
+      "createdAt": "2023-01-12T23:04:41.115Z",
+      "id": 11
     }
   ]
 }
